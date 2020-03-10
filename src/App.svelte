@@ -1,6 +1,12 @@
 <script>
+	import { timeline } from './store.js';
 	import Timeline from './components/Timeline.svelte';
-	export let timelineData;
+
+	let timelineData;
+	const unsubscribe = timeline.subscribe(value => {
+		timelineData = value;
+	});
+
 </script>
 <style >
 	body {
