@@ -18,8 +18,8 @@ section {
 
 	&::before {
 		content: '';
-		background: $light-primary;
-		width: 5px;
+		background: url(/assets/images/timeline-scale.png) center top repeat-y;
+		width: 50px;
 		height: 95%;
 		position: absolute;
 		left: 50%;
