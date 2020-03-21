@@ -3,7 +3,7 @@ import resolve from '@rollup/plugin-node-resolve';
 import commonjs from '@rollup/plugin-commonjs';
 import livereload from 'rollup-plugin-livereload';
 import { terser } from 'rollup-plugin-terser';
-import autoPreprocess, { scss } from 'svelte-preprocess'
+import { scss } from 'svelte-preprocess'
 
 const production = !process.env.ROLLUP_WATCH;
 
@@ -20,7 +20,7 @@ export default {
 			// enable run-time checks when not in production
 			dev: !production,
 			preprocess: [
-				scss({ /* scss options */ }),
+				scss({ includePaths: ['src/components/scss'] }),
 			],
 			// we'll extract any component CSS out into
 			// a separate file - better for performance

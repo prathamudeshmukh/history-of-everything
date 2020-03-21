@@ -1,0 +1,80 @@
+@import "variables";
+
+section {
+  padding: 100px 0;
+}
+
+.timeline {
+
+	position: relative;
+
+	&::before {
+		content: '';
+		background: url(/assets/images/timeline-scale.png) center top repeat-y;
+		width: 50px;
+		height: 95%;
+		position: absolute;
+		left: 50%;
+		transform: translateX(-50%);
+	}
+}
+a {
+	background: #1C121C;
+	color: $text;
+	padding: 8px 20px;
+	text-transform: uppercase;
+	font-size: 14px;
+	margin-bottom: 20px;
+	margin-top: 10px;
+	display: inline-block;
+	border-radius: 2px;
+	box-shadow: 0 1px 3px -1px rgba(0, 0, 0, .6);
+
+	&:hover, &:active, &:focus {
+		background: darken($primary, 10%);
+		color: $text;
+		text-decoration: none;
+	}
+
+}
+
+.timeline-card {
+	padding: 0!important;
+
+	p {
+		padding: 0 20px;
+	}
+
+	a {
+		margin-left: 20px;
+	}
+}
+
+.timeline-item {
+  .timeline-img-header {
+			background: linear-gradient(rgba(0,0,0,0), rgba(0,0,0, .4)), url('https://picsum.photos/1000/800/?random') center center no-repeat;
+			background-size: cover;
+		}
+}
+
+.timeline-img-header {
+
+	height: 200px;
+	position: relative;
+	margin-bottom: 20px;
+
+	h2 {
+		color: $text;
+		position: absolute;
+		bottom: 5px;
+		left: 20px;
+	}
+}
+
+blockquote {
+	margin-top: 30px;
+	color: $secondary-text;
+	border-left-color: #1C121C;
+	padding: 0 20px;
+}
+
