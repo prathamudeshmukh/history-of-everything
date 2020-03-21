@@ -4,7 +4,7 @@
 <style  src="./scss/eventcard.scss"></style>
 <div class="timeline-item">
     <div class="timeline-img"></div>
-    <div class="timeline-content js--fadeInLeft">
+    <div class="timeline-content">
         <h2>Event</h2>
         <div class="date">{event.event_date}</div>
         <p>{event.description}</p>

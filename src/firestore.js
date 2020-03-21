@@ -1,7 +1,7 @@
 import firebase from 'firebase/app';
 import 'firebase/firestore';
 
-var firebaseConfig = {
+const firebaseConfig = {
     apiKey: "AIzaSyBMRqcfiOOFgRxgNiQW39i7JVdyx8GYioo",
     authDomain: "history-47b77.firebaseapp.com",
     databaseURL: "https://history-47b77.firebaseio.com",

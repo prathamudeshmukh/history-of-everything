@@ -1,6 +1,5 @@
 <script>
 		import EventCard from './EventCard.svelte';
-
 		export let timelineData;
 </script>
 <head>

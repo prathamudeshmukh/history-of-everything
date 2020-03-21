@@ -3,7 +3,7 @@
 	import Timeline from './components/Timeline.svelte';
 
 	let timelineData;
-	const unsubscribe = timeline.subscribe(value => {
+	timeline.subscribe(value => {
 		timelineData = value;
 	});
 
@@ -36,6 +36,6 @@
 			<h1>History of everything</h1>
 		</div>
 	</header>
-	<Timeline timelineData={timelineData}/>
+	<Timeline timelineData={timelineData} />
 </body>
 
