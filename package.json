@@ -21,8 +21,11 @@
     "svelte-preprocess": "^3.4.0"
   },
   "dependencies": {
+    "@types/rollup-plugin-node-globals": "^1.4.0",
     "eslint": "^6.8.0",
     "firebase": "^7.4.0",
+    "mongodb": "^3.5.5",
+    "mongoose": "^5.9.6",
     "sirv-cli": "^0.4.4"
   }
 }

@@ -1,6 +1,12 @@
 import App from './App.svelte';
 import db from './firestore';
 import { timeline } from './store.js';
+import connection from './DBClient';
+
+connection.on('error', console.error.bind(console, 'connection error:'));
+connection.once('open', function() {
+    console.log("we're connected!");
+});
 
 const dateFormat = new Intl.DateTimeFormat('default', {
 	month: 'long',day:'2-digit',year:'numeric'
