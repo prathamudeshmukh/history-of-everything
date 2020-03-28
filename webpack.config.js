@@ -15,6 +15,10 @@ module.exports = {
         extensions: ['.mjs', '.js', '.svelte', '.scss'],
         mainFields: ['svelte', 'browser', 'module', 'main']
     },
+    devServer: {
+        contentBase: './public',
+        writeToDisk: true
+    },
     output: {
         path: __dirname + '/public/build',
         filename: '[name].js',

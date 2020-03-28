@@ -4,7 +4,7 @@
   "scripts": {
     "start": "sirv public",
     "build": "cross-env NODE_ENV=production webpack",
-    "dev": "webpack-dev-server --content-base public",
+    "dev": "webpack-dev-server",
     "publish": "surge public http://historyofeverything.surge.sh",
     "lint": "npx eslint src/* --ext .svelte"
   },
